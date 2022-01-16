@@ -25,4 +25,50 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
 # ng-github-search
+
+
+# Team members
+Trevin Livele
+
+## project description
+this is a git hub search application that enables users to search for github users and there repositories
+### copyright licence
+
+This is an open source project that anyone can feel free to edit,modify and push to git hub freely.
+
+## Technologies Used
+Used html to create the layout of the page,used css and bootstrap for the styling purposes and Angular-js for the logic section"
+
+
+.HTML
+.CSS
+.BOOTSTRAP
+.ANGULAR-JS
+
+
+## Support and contact details
+Trevin Livele - Full stack software developer
+Information Technology Expert
++254792691810
+
+
+### Link to project
+https://trevin-livele.github.io/quote_generator/
+
+<!-- 
+![alt text](/img/screenshots/screenshot2.png)
+![alt text](/img/screenshots/screenshot3.png)
+![alt text](/img/screenshots/screenshot4.png) -->
+
+
+
+
+
+
+### License
+Copyright (c) {2021} **{Trevin Livele}**
+  
