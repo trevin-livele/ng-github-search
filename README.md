@@ -57,7 +57,7 @@ Information Technology Expert
 
 
 ### Link to project
-https://trevin-livele.github.io/quote_generator/
+<!-- https://trevin-livele.github.io/quote_generator/ -->
 
 <!-- 
 ![alt text](/img/screenshots/screenshot2.png)
