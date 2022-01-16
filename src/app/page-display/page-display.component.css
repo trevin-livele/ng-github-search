@@ -23,7 +23,11 @@
   font-size: large;
 
 }
-
+.search-user h1{
+  font-size: large;
+  color: #104f77;
+  font-size: xx-large;
+}
 
 .user-form {
   width: 100%;
