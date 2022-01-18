@@ -10,47 +10,26 @@
 </section>
 
 
-
-
-
-
-<!-- 
-    <div>
-     <img src="{{mydata.avatar_url}}" alt="${user.name}" class="avatar">
-    </div>
-        <h2>{{mydata.bio}}</h2>
-        <p>{user.bio}</p>
+<div class="card">
+     <img src="{{mydata.avatar_url}}" alt="img" class="avatar">
+    <div class="user-info">
+        <h2>{{mydata.name}}</h2>
+        <p>{{mydata.company}}</p>
         <ul>
-            <li>{user.followers} <strong>Followers</strong></li>
-            <li>{user.following} <strong>Following</strong></li>
-            <li>{user.public_repos} <strong>Repos</strong></li>
+ <div *ngFor="let repo of myrepos;">
+                {{repo.description}}</div>
+
+
+            <!-- <li>{{user.followers}} <strong>Followers</strong></li> -->
+            <!-- <li>${user.following} <strong>Following</strong></li> -->
+            <!-- <li>${user.public_repos} <strong>Repos</strong></li> -->
         </ul>
 
-    <div id="repos"></div>   
-</div> -->
-
-
-
-
-
-
-
-
-
-
-
-<hr>
-<div class="card">
-<div class="text-center">
-    <img src="{{mydata.avatar_url}}" alt="img" class="rounded">
-   <h4>company: {{mydata.company}} </h4>
-   <div class="user-info">
-        <div *ngFor="let repo of myrepos;">
-<button class="btn btn-secondary">{{repo.description}}</button>
-        </div>
     </div>
-</div> 
-</div>/>
+    </div>
+
+
+
 
 
 
