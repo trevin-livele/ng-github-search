@@ -4,32 +4,31 @@
             and repositories that the user has worked on over time </b> </p>
     <form class="user-form" id="form" (ngSubmit)="onSubmit()" #form='ngForm'>
     <input type="text" id="search" name="name" placeholder="Search for a GitHub User" ngModel required #username="ngModel">
-
         <button type="submit" class="btn btn-primary" (click)="onSearch(username)">search</button>
     </form>
 </section>
 
 
 <section class="repo">
-
-        <img src="{{mydata.avatar_url}}" alt="img" class="avatar">
+ <img src="{{mydata.avatar_url}}" alt="img" class="avatar">
        <div class="user-info">
            <h2>user name:{{mydata.name}}</h2>
+           <strong>Name</strong> {{mydata.login}}
            <p>company:{{mydata.company}}</p>
-           <ul>
-    <div *ngFor="let repo of myrepos;">
-        <li>{{repo.description}}</li>   
+           {{ mydata.followers}} <strong>Followers</strong>
+           {{mydata.following}} <strong>Following</strong>
+           {{mydata.public_repos}} <strong>Repos</strong>
+            <strong>Location</strong>{{mydata.location}}
+            <strong>Updated at</strong>{{mydata.updated_at  | date}}
+       </div>   
+       
+       <div *ngFor="let repo of myrepos;">
+        <div class="des">
+             {{repo.name}} => {{repo.description}}
+            {{repo.view_repo}}
+        </div>
         <br>             
-                </div>
-   
-   
-               <!-- <li>{{user.followers}} <strong>Followers</strong></li> -->
-               <!-- <li>${user.following} <strong>Following</strong></li> -->
-               <!-- <li>${user.public_repos} <strong>Repos</strong></li> -->
-           </ul>
-   
-       </div>
-   
+    </div>
 </section>
 
 

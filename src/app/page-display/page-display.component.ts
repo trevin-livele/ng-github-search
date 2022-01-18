@@ -25,17 +25,8 @@ name = "trevin-livele"
       this.trevin = meserror.message
       console.log(meserror.message)
     })
-    this.fetchService.getRepos(this.name).subscribe(data=>{
-      this.myrepos = data
-      console.log(this.myrepos)
-
-    })
-
     }
   
-
-
-
 onSubmit(){
 
 }
@@ -49,26 +40,10 @@ onSearch(username:any){
 this.trevin = meserror.message
 console.log(meserror.message)
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+this.fetchService.getRepos(username.value).subscribe(repos=>{
+  this.myrepos= repos
+  console.log(this.myrepos)
+})
 
 }
 
