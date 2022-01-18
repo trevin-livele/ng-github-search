@@ -1,12 +1,57 @@
 <section class="search-user">
+    <h1><br>G-SEARCH</h1>
+    <p> <b> G-Search allows you to search for github users
+            and repositories that the user has worked on over time </b> </p>
+    <form class="user-form" id="form" (ngSubmit)="onSubmit()" #form='ngForm'>
+    <input type="text" id="search" name="name" placeholder="Search for a GitHub User" ngModel required #username="ngModel">
 
-<h1><br>G-SEARCH</h1>
-<p> <b> G-Search allows you to search for github users 
-    and repositories that the user has worked on over time </b> </p>
-    <form class="user-form" id="form">
-        <input type="text" id="search" placeholder="Search for a GitHub User">
+        <button type="submit" class="btn btn-primary" (click)="onSearch(username)">search</button>
     </form>
-
-
-
 </section>
+
+
+
+
+
+
+<!-- 
+    <div>
+     <img src="{{mydata.avatar_url}}" alt="${user.name}" class="avatar">
+    </div>
+        <h2>{{mydata.bio}}</h2>
+        <p>{user.bio}</p>
+        <ul>
+            <li>{user.followers} <strong>Followers</strong></li>
+            <li>{user.following} <strong>Following</strong></li>
+            <li>{user.public_repos} <strong>Repos</strong></li>
+        </ul>
+
+    <div id="repos"></div>   
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<div class="card">
+<div class="text-center">
+    <img src="{{mydata.avatar_url}}" alt="img" class="rounded">
+   <h4>company: {{mydata.company}} </h4>
+   <div class="user-info">
+        <div *ngFor="let repo of myrepos;">
+<button class="btn btn-secondary">{{repo.description}}</button>
+        </div>
+    </div>
+</div> 
+</div>/>
+
+
+
+
