@@ -104,16 +104,13 @@
 .repo {
   text-decoration: none;
   color: #fff;
-  background-color:black;
-  font-size: 1.2rem;
+  background-color:blue;
+  font-size: 1.rem;
   padding: 0.25rem 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.des{
-  display: block;
-  justify-content: space-around;
-  margin: 5px;
-}
+
+
 
 

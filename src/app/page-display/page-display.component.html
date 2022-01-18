@@ -21,15 +21,34 @@
             <strong>Location</strong>{{mydata.location}}
             <strong>Updated at</strong>{{mydata.updated_at  | date}}
        </div>   
-       
-       <div *ngFor="let repo of myrepos;">
-        <div class="des">
-             {{repo.name}} => {{repo.description}}
-            {{repo.view_repo}}
+    <hr>
+
+
+
+    <div class="row">
+        <div class="col-md-5">
+    
+        <div *ngFor="let repo of myrepos;">
+            <div class="des">
+                 {{repo.name}} 
         </div>
-        <br>             
+        <div class="col-md-7">
+    <p>{{repo.description}}</p>
+    {{repo.view_repo}}
+    </div>
+    <br>             
+    </div>
+        </div>
     </div>
 </section>
+
+        
+
+
+
+
+
+
 
 
 
